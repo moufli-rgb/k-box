@@ -1,0 +1,6 @@
+{
+  "name": "K-Box | Coffrets Cadeaux & Box Surprises d'Événements",
+  "description": "Vente de box surprises et coffrets cadeaux personnalisés pour tous vos événements (Anniversaire, Saint-Valentin, Noël, Réussite). Formules K-Box 1, 2 et 3.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

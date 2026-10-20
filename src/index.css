@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-brand {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Animations d'étincelles féeriques et douces */
+@keyframes sparkle-twinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.7) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(180deg);
+    filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.9));
+  }
+}
+
+@keyframes sparkle-float {
+  0%, 100% {
+    transform: translateY(0px) scale(0.9);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.15);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(253, 224, 71, 0.95));
+  }
+}
+
+@keyframes sparkle-drift {
+  0% {
+    transform: translate(0px, 0px) scale(0.6);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.9;
+    transform: translate(4px, -12px) scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-3px, -24px) scale(1);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translate(3px, -36px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, -48px) scale(0.4);
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-sparkle-gentle {
+  animation: sparkle-twinkle 3s ease-in-out infinite;
+}
+
+.animate-sparkle-1 {
+  animation: sparkle-float 4.2s ease-in-out infinite;
+}
+
+.animate-sparkle-2 {
+  animation: sparkle-twinkle 2.8s ease-in-out 0.8s infinite;
+}
+
+.animate-sparkle-3 {
+  animation: sparkle-float 3.6s ease-in-out 1.5s infinite;
+}
+
+.animate-sparkle-drift {
+  animation: sparkle-drift 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
